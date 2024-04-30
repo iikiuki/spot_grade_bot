@@ -9,7 +9,7 @@ exchange = ccxt.phemex({
 })
 
 # Define trading parameters
-symbol = 'BTC/USDT'  # The trading pair
+symbol = 'ًWIF/USDT'  # The trading pair
 grid_levels = 6  # Total grid levels (3 below and 3 above the current price)
 grid_spacing =exchange.fetch_ticker(symbol)['last']*0.02 # Spacing between grid levels in USDT
 trade_amount = 1.1/exchange.fetch_ticker(symbol)['last']  # Amount to trade at each level in BTC
